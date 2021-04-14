@@ -3,21 +3,21 @@ import java.util.Scanner;
 public class number {
 
 	public static void main(String[] args) {
-	Scanner scanner = new Scanner(System.in);
-	System.out.print("10°³ÀÇ ·£´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä(1~50±îÁö):");
+	Scanner scanner = new Scanner(System.in); // ìŠ¤ìºë„ˆ ìƒì„±
+	System.out.print("10ê°œì˜ ëœë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”(1~50ê¹Œì§€):");
 	int a = scanner.nextInt();
 	int c=0;
 	System.out.println();
-	for(int i=0;i<10;i++) { 
-		int b = (int)(Math.random()*50+1);
+	for(int i=0;i<10;i++) {  // 10ë²ˆ ë°˜ë³µ
+		int b = (int)(Math.random()*50+1); // 1ë¶€í„°50ê¹Œì§€ ëœë¤í•œ ìˆ«ì ìƒì„±
 		System.out.print(b+" ");
-		if(a==b) {
+		if(a==b) {  // ifë¬¸ìœ¼ë¡œ ì…ë ¥í•œ ìˆ«ìì™€ ë™ì¼í•˜ë©´ ì •ë‹µ ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ ê½
 			c=1;
 		}
 	}
 	if(c==1) {
-		System.out.println("\nÁ¤´ä");
-	}else System.out.println("\n²Î");
+		System.out.println("\nì •ë‹µ");
+	}else System.out.println("\nê½");
 	
 	}
 
